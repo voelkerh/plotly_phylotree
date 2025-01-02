@@ -307,7 +307,7 @@ class _PhylogeneticTree:
     ):
         unclassified_name = self.get_node_name(unclassified, node_counter)
         x_positions[unclassified_name] = 0
-        y_positions[unclassified_name] = y_positions[root_clade.name] - 1
+        y_positions[unclassified_name] = 2 - max(y_positions.values())
         return self.generate_scatter_trace(
             x_positions[unclassified_name],
             y_positions[unclassified_name],
