@@ -77,7 +77,7 @@ class _PhylogeneticTree:
         self.layout = {self.xaxis: {}, self.yaxis: {}}
 
         # Generate data and layout for figure
-        self.data = self.get_phylo_tree_traces(tree, display_level, show_labels)
+        self.data = self.get_phylo_tree_traces(tree, display_level)
         self.layout = self.set_figure_layout()
 
     def _parse_newick(self, newick_str):
@@ -153,7 +153,7 @@ class _PhylogeneticTree:
 
         self.layout[axis_key].update(axis_defaults)
 
-    def get_phylo_tree_traces(self, tree, display_level, show_labels):
+    def get_phylo_tree_traces(self, tree, display_level):
         """
         Calculates all traces needed for plotting a phylogenetic tree.
 
