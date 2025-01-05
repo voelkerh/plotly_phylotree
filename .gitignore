@@ -1,3 +1,15 @@
-/.DS_Store
+# Python bytecode, cache
 /.pytest_cache
+__pycache__/
+*.pyc
+
+# System files
+/.DS_Store
+
+# Build files
+build/
+dist/
+*.egg-info/
+
+# Other
 run.py
