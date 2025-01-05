@@ -52,3 +52,11 @@ fig = create_phylogenetic_tree(newick_str, show_labels=False)
 fig.show()
 ```
 ![Alt text](/examples/output_images/mammals_tree_no_labels.png "Mammals without labels")
+
+## Contributing
+
+Suggestions for improvement are welcome. As this is a small side project, please allow some time for answers and revision.
+
+## License
+
+MIT License
