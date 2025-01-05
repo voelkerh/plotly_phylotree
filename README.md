@@ -16,7 +16,7 @@ pip install plotly-phylotree
 
 ### 1. Basic Tree
 - Labels shown by default
-- No distances specified
+- No distances specified in Newick string
 
 ```python
 from phylotree import create_phylogenetic_tree
@@ -27,9 +27,22 @@ fig.show()
 ```
 ![Alt text](/examples/output_images/basic_tree_labels.png "Basic Tree")
 
-### 2. Tree with specified distances
+### 2. Basic Tree with specified maximum display level
+- Display level specifies level up to which tree is plotted. Defaults to np.inf.
+
+```python
+from phylotree import create_phylogenetic_tree
+
+newick_str = "(A,(B,C)D)E;"
+fig = create_phylogenetic_tree(newick_str, display_level=1)
+fig.show()
+```
+
+![Alt text](/examples/output_images/basic_tree_display_level.png "Basic Tree with max display level")
+
+### 3. Tree with specified distances
 - Labels shown by default
-- Distances specified
+- Distances specified in Newick string
 
 ```python
 from phylotree import create_phylogenetic_tree
@@ -40,7 +53,7 @@ fig.show()
 ```
 ![Alt text](/examples/output_images/mammals_tree_labels.png "Mammals")
 
-### 3. Tree without labels
+### 4. Tree without labels
 - Labels deactivated
 - Distances specified
 
