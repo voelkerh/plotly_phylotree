@@ -17,3 +17,4 @@ newick_str = "(A,(B,C)D)E;"
 fig = create_phylogenetic_tree(newick_str)
 fig.show()
 ```
+![Alt text](/examples/output_images/basic_tree_labels.png "Basic Tree")
